@@ -4,6 +4,7 @@ import About from './sections/About.jsx'
 import Trust from './sections/Trust.jsx'
 import Services from './sections/Services.jsx'
 import Tariffs from './sections/Tariffs.jsx'
+import BusinessPlan from './sections/BusinessPlan.jsx'
 import Process from './sections/Process.jsx'
 import ForWhom from './sections/ForWhom.jsx'
 import Education from './sections/Education.jsx'
@@ -22,6 +23,7 @@ export default function App() {
         <Trust />
         <Services />
         <Tariffs />
+        <BusinessPlan />
         <Process />
         <ForWhom />
         <Education />
