@@ -53,8 +53,8 @@
   }
 }
 
-/* Scroll-reveal */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .45s ease-out, transform .45s ease-out; will-change: opacity, transform; }
+/* Scroll-reveal disabled — content always visible, no scroll dependency */
+.reveal { opacity: 1; transform: none; }
 .reveal.in { opacity: 1; transform: none; }
 
 /* Subtle dotted grid */
