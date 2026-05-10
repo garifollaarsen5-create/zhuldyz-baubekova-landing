@@ -85,7 +85,7 @@ export default function Contact() {
      ${hasErr ? 'border-red-400 focus:border-red-500' : 'border-navy-100 focus:border-navy-500'}`
 
   return (
-    <section id="contact" className="py-20 lg:py-28 relative overflow-hidden">
+    <section id="contact" className="pt-16 lg:pt-28 pb-10 lg:pb-20 relative overflow-hidden">
       <div aria-hidden className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-navy-50/40 to-white" />
         <div className="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full bg-gold-400/15 blur-3xl" />

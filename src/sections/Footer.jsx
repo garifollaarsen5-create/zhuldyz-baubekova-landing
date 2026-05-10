@@ -2,11 +2,12 @@ import { IconIG, IconWA } from '../components/Icons.jsx'
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-grad text-navy-100 pt-14 pb-8 relative overflow-hidden">
+    <footer className="bg-navy-900 bg-navy-grad text-white pt-14 pb-8 relative overflow-hidden"
+            style={{ backgroundColor: '#081c3d' }}>
       <div aria-hidden className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-navy-500/20 blur-3xl" />
       <div aria-hidden className="absolute -bottom-40 -right-40 w-[460px] h-[460px] rounded-full bg-gold-400/10 blur-3xl" />
 
-      <div className="container-x relative grid md:grid-cols-3 gap-10">
+      <div className="container-x relative grid md:grid-cols-3 gap-7 md:gap-10">
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3">
