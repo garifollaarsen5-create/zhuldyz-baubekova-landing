@@ -2,38 +2,52 @@ import { IconIG, IconWA } from '../components/Icons.jsx'
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-900 bg-navy-grad text-white pt-14 pb-8 relative overflow-hidden"
-            style={{ backgroundColor: '#081c3d' }}>
-      <div aria-hidden className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-navy-500/20 blur-3xl" />
-      <div aria-hidden className="absolute -bottom-40 -right-40 w-[460px] h-[460px] rounded-full bg-gold-400/10 blur-3xl" />
-
-      <div className="container-x relative grid md:grid-cols-3 gap-7 md:gap-10">
+    <footer
+      className="text-white pt-12 pb-7 relative"
+      style={{
+        backgroundColor: '#081c3d',
+        backgroundImage: 'linear-gradient(135deg, #143464 0%, #081c3d 100%)',
+      }}
+    >
+      <div className="container-x grid md:grid-cols-3 gap-7 md:gap-10">
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3">
-            <span className="w-12 h-12 rounded-full overflow-hidden bg-white grid place-items-center shrink-0">
-              <img src="/logo-business-qoldau.png" alt="Business Qoldau" className="w-[150%] h-[150%] object-cover" />
+            <span
+              className="w-12 h-12 rounded-full overflow-hidden grid place-items-center shrink-0"
+              style={{ backgroundColor: '#ffffff' }}
+            >
+              <img src="/logo-business-qoldau.png" alt="Business Qoldau"
+                   className="w-[150%] h-[150%] object-cover" />
             </span>
             <div>
               <div className="font-display font-bold text-white text-base">Zhuldyz Baubekova</div>
-              <div className="text-sm text-navy-200">Business Qoldau · финансовый консалтинг</div>
+              <div className="text-sm" style={{ color: '#a9bfe2' }}>Business Qoldau · финансовый консалтинг</div>
             </div>
           </div>
-          <p className="mt-5 text-navy-200 text-sm leading-relaxed">
+          <p className="mt-5 text-sm leading-relaxed" style={{ color: '#a9bfe2' }}>
             Команда, которая говорит с банками на одном языке и помогает предпринимателям пройти путь от анализа бизнеса до получения финансирования.
           </p>
 
           <div className="mt-6 flex items-center gap-3">
-            <span className="w-12 h-12 rounded-xl bg-white/10 grid place-items-center backdrop-blur"><img src="/logo-damu.png" alt="Даму" className="w-9 h-9 object-contain" /></span>
-            <span className="w-12 h-12 rounded-xl bg-white/10 grid place-items-center backdrop-blur"><img src="/logo-ebrd.png" alt="ЕБРР" className="w-9 h-9 object-contain" /></span>
-            <span className="text-xs text-navy-200">Аккредитация<br/>Даму · ЕБРР</span>
+            <span className="w-12 h-12 rounded-xl grid place-items-center"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
+              <img src="/logo-damu.png" alt="Даму" className="w-9 h-9 object-contain" />
+            </span>
+            <span className="w-12 h-12 rounded-xl grid place-items-center"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
+              <img src="/logo-ebrd.png" alt="ЕБРР" className="w-9 h-9 object-contain" />
+            </span>
+            <span className="text-xs" style={{ color: '#a9bfe2' }}>
+              Аккредитация<br/>Даму · ЕБРР
+            </span>
           </div>
         </div>
 
         {/* Nav */}
         <div>
           <div className="font-display font-bold text-white mb-4">Разделы</div>
-          <ul className="grid grid-cols-2 gap-y-2 gap-x-4 text-sm">
+          <ul className="grid grid-cols-2 gap-y-2 gap-x-4 text-sm" style={{ color: '#cfd9ee' }}>
             <li><a className="hover:text-white" href="#about">Обо мне</a></li>
             <li><a className="hover:text-white" href="#trust">Доверие</a></li>
             <li><a className="hover:text-white" href="#services">Услуги</a></li>
@@ -46,7 +60,7 @@ export default function Footer() {
         {/* Contacts */}
         <div>
           <div className="font-display font-bold text-white mb-4">Связаться</div>
-          <ul className="space-y-3 text-sm">
+          <ul className="space-y-3 text-sm" style={{ color: '#cfd9ee' }}>
             <li>
               <a href="https://wa.me/77754492929" target="_blank" rel="noopener" className="flex items-center gap-2 hover:text-white">
                 <IconWA width="16" height="16" /> +7 775 449 29 29 · zhuldyz.baubekova
@@ -71,7 +85,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container-x relative mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-2 text-xs text-navy-200">
+      <div
+        className="container-x mt-8 pt-5 flex flex-col sm:flex-row justify-between gap-2 text-xs"
+        style={{ borderTop: '1px solid rgba(255,255,255,0.12)', color: '#a9bfe2' }}
+      >
         <span>© {new Date().getFullYear()} Zhuldyz Baubekova · Business Qoldau</span>
         <span>Все права защищены</span>
       </div>
