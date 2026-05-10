@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html, body { overflow-x: clip; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body { font-feature-settings: "ss01", "cv11"; }
   ::selection { background: #143464; color: #fff; }
   h1, h2, h3, h4 { font-family: 'Unbounded', system-ui, sans-serif; letter-spacing: -0.02em; }
+  img { max-width: 100%; }
 }
 
 @layer components {

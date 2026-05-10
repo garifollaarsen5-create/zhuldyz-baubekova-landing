@@ -54,44 +54,44 @@ export default function Hero() {
 
         {/* Photo column */}
         <Reveal className="relative">
-          <div className="relative mx-auto w-[min(440px,100%)] aspect-square">
+          <div className="relative mx-auto w-[min(420px,86%)] sm:w-[min(440px,100%)] aspect-square">
             {/* halo */}
             <div className="absolute -inset-6 bg-gold-grad rounded-full opacity-25 blur-2xl" />
             {/* gradient ring */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold-400 via-white to-navy-200 p-[6px] shadow-glow">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold-400 via-white to-navy-200 p-[5px] sm:p-[6px] shadow-glow">
               <div className="w-full h-full rounded-full overflow-hidden bg-white">
                 <img src="/zhuldyz-photo.png" alt="Жулдыз Баубекова"
                      className="w-full h-full object-cover" />
               </div>
             </div>
 
-            {/* Floating cards */}
-            <div className="absolute -left-2 sm:-left-6 top-6 card px-4 py-3 flex items-center gap-3 animate-floaty delay-1">
-              <div className="w-10 h-10 rounded-xl bg-navy-grad text-white grid place-items-center font-display font-bold">17</div>
+            {/* Floating cards — compact on mobile */}
+            <div className="absolute left-0 sm:-left-6 top-3 sm:top-6 card px-2 py-1.5 sm:px-4 sm:py-3 flex items-center gap-1.5 sm:gap-3 animate-floaty delay-1">
+              <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-navy-grad text-white grid place-items-center font-display font-bold text-[11px] sm:text-base">17</div>
               <div className="leading-tight">
-                <div className="font-bold text-navy-900 text-sm">лет в банке</div>
-                <div className="text-xs text-navy-500">от кассира до зам. директора</div>
+                <div className="font-bold text-navy-900 text-[11px] sm:text-sm">лет в банке</div>
+                <div className="text-[9px] sm:text-xs text-navy-500 hidden sm:block">от кассира до зам. директора</div>
               </div>
             </div>
 
-            <div className="absolute -right-2 sm:-right-6 top-1/2 -translate-y-1/2 card px-4 py-3 flex items-center gap-3 animate-floaty delay-2">
-              <div className="w-10 h-10 rounded-xl bg-gold-grad text-navy-900 grid place-items-center font-display font-bold text-[13px]">5+</div>
+            <div className="absolute right-0 sm:-right-6 top-1/2 -translate-y-1/2 card px-2 py-1.5 sm:px-4 sm:py-3 flex items-center gap-1.5 sm:gap-3 animate-floaty delay-2">
+              <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gold-grad text-navy-900 grid place-items-center font-display font-bold text-[10px] sm:text-[13px]">5+</div>
               <div className="leading-tight">
-                <div className="font-bold text-navy-900 text-sm">млрд ₸</div>
-                <div className="text-xs text-navy-500">привлечено для бизнеса</div>
+                <div className="font-bold text-navy-900 text-[11px] sm:text-sm">млрд ₸</div>
+                <div className="text-[9px] sm:text-xs text-navy-500 hidden sm:block">привлечено для бизнеса</div>
               </div>
             </div>
 
-            <div className="absolute left-6 -bottom-2 sm:-bottom-4 card px-4 py-3 flex items-center gap-3 animate-floaty delay-3">
-              <span className="w-9 h-9 rounded-full bg-white ring-1 ring-navy-100 overflow-hidden grid place-items-center">
-                <img src="/logo-damu.png" alt="Даму" className="w-full h-full object-contain p-1" />
+            <div className="absolute left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 -bottom-3 sm:-bottom-4 card px-2 py-1.5 sm:px-4 sm:py-3 flex items-center gap-1.5 sm:gap-3 animate-floaty delay-3">
+              <span className="w-6 h-6 sm:w-9 sm:h-9 rounded-full bg-white ring-1 ring-navy-100 overflow-hidden grid place-items-center shrink-0">
+                <img src="/logo-damu.png" alt="Даму" className="w-full h-full object-contain p-0.5 sm:p-1" />
               </span>
-              <span className="w-9 h-9 rounded-full bg-white ring-1 ring-navy-100 overflow-hidden grid place-items-center">
-                <img src="/logo-ebrd.png" alt="ЕБРР" className="w-full h-full object-contain p-1" />
+              <span className="w-6 h-6 sm:w-9 sm:h-9 rounded-full bg-white ring-1 ring-navy-100 overflow-hidden grid place-items-center shrink-0">
+                <img src="/logo-ebrd.png" alt="ЕБРР" className="w-full h-full object-contain p-0.5 sm:p-1" />
               </span>
               <div className="leading-tight">
-                <div className="font-bold text-navy-900 text-sm">Аккредитация</div>
-                <div className="text-xs text-navy-500">Даму · ЕБРР</div>
+                <div className="font-bold text-navy-900 text-[11px] sm:text-sm">Аккредитация</div>
+                <div className="text-[9px] sm:text-xs text-navy-500 hidden sm:block">Даму · ЕБРР</div>
               </div>
             </div>
           </div>

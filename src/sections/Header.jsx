@@ -23,15 +23,16 @@ export default function Header() {
 
   return (
     <header className={`sticky top-0 z-40 backdrop-blur-md transition-all ${scrolled ? 'bg-white/85 border-b border-navy-100 shadow-soft' : 'bg-white/60'}`}>
-      <div className="container-x flex items-center justify-between gap-3 py-3">
-        <a href="#top" className="flex items-center gap-3 group">
+      <div className="container-x flex items-center justify-between gap-2 sm:gap-3 py-3">
+        <a href="#top" className="flex items-center gap-2 sm:gap-3 group min-w-0 flex-1">
           <span className="w-11 h-11 rounded-full overflow-hidden bg-white ring-2 ring-navy-100 shadow-soft shrink-0 grid place-items-center">
             <img src="/logo-business-qoldau.png" alt="Business Qoldau"
                  className="w-[150%] h-[150%] object-cover scale-[1.15]" />
           </span>
-          <span className="leading-tight">
-            <span className="block font-display font-bold text-navy-900 text-[15px] sm:text-base">Zhuldyz Baubekova</span>
-            <span className="block text-[11px] text-navy-500 font-semibold tracking-wide">BUSINESS QOLDAU · Финансовый консалтинг</span>
+          <span className="leading-tight min-w-0">
+            <span className="block font-display font-bold text-navy-900 text-[14px] sm:text-base truncate">Zhuldyz Baubekova</span>
+            <span className="hidden sm:block text-[11px] text-navy-500 font-semibold tracking-wide">BUSINESS QOLDAU · Финансовый консалтинг</span>
+            <span className="sm:hidden block text-[10px] text-navy-500 font-semibold tracking-wide">Business Qoldau</span>
           </span>
         </a>
 
