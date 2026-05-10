@@ -7,7 +7,7 @@
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body { font-feature-settings: "ss01", "cv11"; }
   ::selection { background: #143464; color: #fff; }
-  h1, h2, h3, h4 { font-family: 'Unbounded', system-ui, sans-serif; letter-spacing: -0.02em; }
+  h1, h2, h3, h4 { font-family: 'Unbounded', system-ui, sans-serif; letter-spacing: -0.02em; overflow-wrap: anywhere; }
   img { max-width: 100%; }
 }
 
@@ -25,7 +25,7 @@
   }
   .grad-text { @apply bg-gradient-to-br from-navy-700 via-navy-600 to-navy-900 bg-clip-text text-transparent; }
   .grad-gold { @apply bg-gold-grad bg-clip-text text-transparent; }
-  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 whitespace-nowrap; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 text-center leading-tight; }
   .btn-primary {
     @apply btn bg-navy-grad text-white px-6 py-3.5 shadow-glow hover:-translate-y-0.5
            hover:shadow-[0_28px_60px_rgba(8,28,61,0.45)];
@@ -38,7 +38,7 @@
            hover:border-navy-300 hover:bg-navy-50 hover:-translate-y-0.5;
   }
   .card { @apply bg-white rounded-2xl border border-navy-100 shadow-soft; }
-  .section-title { @apply font-display font-bold text-navy-900 leading-[1.1]; }
+  .section-title { @apply font-display font-bold text-navy-900 leading-[1.1] break-words; }
   .check-list li { @apply relative pl-8 text-navy-700 leading-relaxed; }
   .check-list li::before {
     content: "";
@@ -54,7 +54,7 @@
 }
 
 /* Scroll-reveal */
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity .85s ease, transform .85s ease; }
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .45s ease-out, transform .45s ease-out; will-change: opacity, transform; }
 .reveal.in { opacity: 1; transform: none; }
 
 /* Subtle dotted grid */

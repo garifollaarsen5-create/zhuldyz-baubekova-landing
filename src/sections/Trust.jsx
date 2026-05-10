@@ -48,17 +48,18 @@ export default function Trust() {
         <Reveal delay={200} className="mt-10">
           <div className="card overflow-hidden">
             <div className="grid lg:grid-cols-[1.1fr_1fr] gap-0">
-              <div className="p-7 lg:p-9 bg-navy-50/40 border-b lg:border-b-0 lg:border-r border-navy-100">
+              <div className="p-5 sm:p-7 lg:p-9 bg-navy-50/40 border-b lg:border-b-0 lg:border-r border-navy-100">
                 <span className="eyebrow-gold mb-3"><IconShield width="14" height="14" /> Подтверждение доверия</span>
-                <h3 className="font-display text-2xl font-bold text-navy-900 leading-snug">
+                <h3 className="font-display text-[1.25rem] sm:text-2xl font-bold text-navy-900 leading-snug break-words hyphens-auto">
                   Business Qoldau аккредитована Фондом «Даму» и ЕБРР
                 </h3>
-                <p className="mt-3 text-navy-600">
+                <p className="mt-3 text-navy-600 text-[0.95rem] sm:text-base">
                   Это означает, что компания прошла отбор и соответствует требованиям институтов поддержки бизнеса в Казахстане и Европе.
                 </p>
                 <a href="https://damu.kz/ru/consulting_companies/" target="_blank" rel="noopener"
-                   className="btn-primary mt-5">
-                  Проверить аккредитацию в реестре Даму <IconArrow />
+                   className="btn-primary mt-5 !px-5 !py-3 text-sm sm:text-base w-full sm:w-auto">
+                  <span>Проверить в реестре Даму</span>
+                  <IconArrow />
                 </a>
               </div>
 
