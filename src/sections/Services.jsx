@@ -35,7 +35,7 @@ export default function Services() {
     <section id="services" className="py-20 lg:py-28 bg-white relative">
       <div className="container-x">
         <Reveal className="text-center max-w-2xl mx-auto mb-12">
-          <span className="eyebrow mb-4">Чем мы помогаем</span>
+          <span className="eyebrow mb-4">Наши услуги</span>
           <h2 className="section-title text-[clamp(1.8rem,3.2vw,2.6rem)]">
             Полный цикл — от анализа <span className="grad-gold">до получения финансирования</span>
           </h2>

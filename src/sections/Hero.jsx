@@ -54,8 +54,8 @@ export default function Hero() {
             {/* gradient ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold-400 via-white to-navy-200 p-[5px] sm:p-[6px] shadow-glow">
               <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                <img src="/zhuldyz-photo.png" alt="Жулдыз Баубекова"
-                     className="w-full h-full object-cover" />
+                <img src="/zhuldyz-photo.jpg" alt="Жулдыз Баубекова"
+                     className="w-full h-full object-cover object-top" />
               </div>
             </div>
 

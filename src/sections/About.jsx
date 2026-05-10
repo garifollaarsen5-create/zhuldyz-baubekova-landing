@@ -7,7 +7,7 @@ export default function About() {
         <Reveal className="relative">
           <div className="relative max-w-[440px] mx-auto">
             <div className="relative rounded-3xl overflow-hidden shadow-card border border-navy-100">
-              <img src="/services-photo.png" alt="Zhuldyz Baubekova" className="w-full h-auto" />
+              <img src="/services-photo.jpg" alt="Zhuldyz Baubekova" className="w-full h-auto" />
             </div>
             <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 card px-5 py-3 flex items-center gap-3">
               <span className="text-3xl font-display font-bold grad-text">17</span>
