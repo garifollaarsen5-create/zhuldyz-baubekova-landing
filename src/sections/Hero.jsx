@@ -4,13 +4,9 @@ import { IconArrow, IconWA, IconShield } from '../components/Icons.jsx'
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden isolate">
-      {/* Background */}
-      <div aria-hidden className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-navy-radial" />
-        <div className="absolute inset-0 bg-dots opacity-40 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_30%,#000_30%,transparent_75%)]" />
-        <div className="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-navy-200/60 blur-[100px]" />
-        <div className="absolute -bottom-32 -left-24 w-[460px] h-[460px] rounded-full bg-gold-400/25 blur-[100px]" />
-      </div>
+      {/* Background — soft gradient, no heavy blurs (mobile perf) */}
+      <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-br from-navy-50 via-white to-navy-50" />
+      <div aria-hidden className="absolute inset-0 -z-10 bg-dots opacity-30 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_30%,#000_30%,transparent_75%)]" />
 
       <div className="container-x grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-14 items-center pt-12 lg:pt-20 pb-16 lg:pb-24">
         <Reveal>
@@ -55,8 +51,6 @@ export default function Hero() {
         {/* Photo column */}
         <Reveal className="relative">
           <div className="relative mx-auto w-[min(420px,86%)] sm:w-[min(440px,100%)] aspect-square">
-            {/* halo */}
-            <div className="absolute -inset-6 bg-gold-grad rounded-full opacity-25 blur-2xl" />
             {/* gradient ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold-400 via-white to-navy-200 p-[5px] sm:p-[6px] shadow-glow">
               <div className="w-full h-full rounded-full overflow-hidden bg-white">

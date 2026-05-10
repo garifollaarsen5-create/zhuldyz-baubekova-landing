@@ -46,12 +46,11 @@ export default function Services() {
             const Icon = s.icon
             return (
               <Reveal key={i} delay={i * 70}>
-                <article className={`relative group h-full rounded-3xl p-7 border overflow-hidden transition-all duration-500
+                <article className={`relative group h-full rounded-3xl p-7 border transition-all duration-300
                   ${s.accent
-                    ? 'bg-navy-grad text-white border-transparent shadow-glow'
-                    : 'bg-white text-navy-800 border-navy-100 shadow-soft hover:-translate-y-1 hover:shadow-card hover:border-navy-200'}`}>
-                  <div className={`absolute -top-16 -right-16 w-48 h-48 rounded-full blur-3xl transition-opacity
-                    ${s.accent ? 'bg-gold-400/30' : 'bg-navy-50 group-hover:opacity-100 opacity-0'}`} />
+                    ? 'text-white border-transparent shadow-glow'
+                    : 'bg-white text-navy-800 border-navy-100 shadow-soft hover:-translate-y-1 hover:shadow-card hover:border-navy-200'}`}
+                  style={s.accent ? { backgroundColor: '#081c3d', backgroundImage: 'linear-gradient(135deg, #143464 0%, #081c3d 100%)' } : undefined}>
                   <div className="relative">
                     <div className={`w-14 h-14 rounded-2xl grid place-items-center mb-5
                       ${s.accent ? 'bg-white/15 text-white' : 'bg-navy-50 text-navy-700 group-hover:rotate-[-6deg] transition-transform'}`}>

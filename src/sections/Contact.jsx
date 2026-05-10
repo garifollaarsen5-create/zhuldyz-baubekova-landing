@@ -86,10 +86,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="pt-16 lg:pt-28 pb-10 lg:pb-20 relative overflow-hidden">
-      <div aria-hidden className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-50/40 to-white" />
-        <div className="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full bg-gold-400/15 blur-3xl" />
-      </div>
+      <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-50/40 to-white" />
 
       <div className="container-x grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-14 items-start">
         <Reveal>

@@ -22,7 +22,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`sticky top-0 z-40 backdrop-blur-md transition-all ${scrolled ? 'bg-white/85 border-b border-navy-100 shadow-soft' : 'bg-white/60'}`}>
+    <header className={`sticky top-0 z-40 transition-all ${scrolled ? 'bg-white border-b border-navy-100 shadow-soft' : 'bg-white'}`}>
       <div className="container-x flex items-center justify-between gap-2 sm:gap-3 py-3">
         <a href="#top" className="flex items-center gap-2 sm:gap-3 group min-w-0 flex-1">
           <span className="w-11 h-11 rounded-full overflow-hidden bg-white ring-2 ring-navy-100 shadow-soft shrink-0 grid place-items-center">

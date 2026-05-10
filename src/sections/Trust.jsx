@@ -25,12 +25,11 @@ export default function Trust() {
         <div className="grid md:grid-cols-3 gap-4 lg:gap-6">
           {STATS.map((s, i) => (
             <Reveal key={i} delay={i * 80}>
-              <div className={`relative rounded-3xl p-7 lg:p-8 border h-full overflow-hidden
+              <div className={`relative rounded-3xl p-7 lg:p-8 border h-full
                 ${s.accent
-                  ? 'bg-navy-grad border-transparent text-white shadow-glow'
-                  : 'bg-white border-navy-100 shadow-soft'}`}>
-                <div className={`absolute -top-10 -right-10 w-44 h-44 rounded-full blur-3xl
-                  ${s.accent ? 'bg-gold-400/30' : 'bg-navy-100'}`} />
+                  ? 'border-transparent text-white shadow-glow'
+                  : 'bg-white border-navy-100 shadow-soft'}`}
+                style={s.accent ? { backgroundColor: '#081c3d', backgroundImage: 'linear-gradient(135deg, #143464 0%, #081c3d 100%)' } : undefined}>
                 <div className="relative">
                   <div className={`font-display font-bold leading-none flex items-end gap-2
                     ${s.accent ? 'text-white' : 'grad-text'}`}>

@@ -3,12 +3,9 @@ import Reveal from '../components/Reveal.jsx'
 export default function About() {
   return (
     <section id="about" className="py-20 lg:py-28 bg-navy-50/40 relative overflow-hidden">
-      <div aria-hidden className="absolute -top-24 -right-24 w-[400px] h-[400px] rounded-full bg-navy-100/60 blur-3xl" />
-
       <div className="container-x grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
         <Reveal className="relative">
           <div className="relative max-w-[440px] mx-auto">
-            <div className="absolute -inset-3 bg-navy-grad rounded-3xl opacity-10 blur-2xl" />
             <div className="relative rounded-3xl overflow-hidden shadow-card border border-navy-100">
               <img src="/services-photo.png" alt="Zhuldyz Baubekova" className="w-full h-auto" />
             </div>

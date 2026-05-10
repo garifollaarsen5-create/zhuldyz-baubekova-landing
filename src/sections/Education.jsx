@@ -14,9 +14,8 @@ const PROGRAM = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 lg:py-28 bg-navy-grad text-white relative overflow-hidden">
-      <div aria-hidden className="absolute -top-32 -left-32 w-[460px] h-[460px] rounded-full bg-gold-400/15 blur-3xl" />
-      <div aria-hidden className="absolute -bottom-32 -right-32 w-[460px] h-[460px] rounded-full bg-navy-300/15 blur-3xl" />
+    <section id="education" className="py-20 lg:py-28 text-white relative overflow-hidden"
+             style={{ backgroundColor: '#081c3d', backgroundImage: 'linear-gradient(135deg, #143464 0%, #081c3d 100%)' }}>
       <div aria-hidden className="absolute inset-0 bg-dots opacity-10" />
 
       <div className="container-x relative grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
@@ -46,7 +45,7 @@ export default function Education() {
         </Reveal>
 
         <Reveal delay={150}>
-          <div className="card !bg-white/[0.06] !border-white/15 backdrop-blur p-6 lg:p-8">
+          <div className="card !bg-white/[0.06] !border-white/15 p-6 lg:p-8">
             <h3 className="font-display font-bold text-xl text-white mb-5">Программа обучения</h3>
             <ul className="grid sm:grid-cols-2 gap-3">
               {PROGRAM.map((p, i) => (
