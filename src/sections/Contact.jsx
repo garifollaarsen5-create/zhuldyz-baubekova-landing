@@ -98,6 +98,14 @@ export default function Contact() {
             Оставьте заявку — мы разберём ваш бизнес, оценим шансы, слабые места и возможные инструменты финансирования.
           </p>
 
+          <div className="mt-6 inline-flex items-center gap-3 rounded-2xl border border-gold-400/40 bg-gold-400/10 px-4 py-3">
+            <span className="w-10 h-10 rounded-xl bg-gold-grad text-navy-900 grid place-items-center font-display font-bold text-sm shrink-0">₸</span>
+            <div className="leading-tight">
+              <div className="text-xs uppercase tracking-[0.18em] font-bold text-gold-700">Стоимость консультации</div>
+              <div className="font-display font-bold text-navy-900 text-xl">20 000 ₸</div>
+            </div>
+          </div>
+
           <div className="mt-8 rounded-3xl overflow-hidden shadow-card border border-navy-100 max-w-md">
             <img src="/consultation-photo.png" alt="Консультация" className="w-full h-auto" />
           </div>
