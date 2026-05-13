@@ -23,10 +23,14 @@ export default function Hero() {
             Основатель <b>Business Qoldau</b> — консалтинговой компании, аккредитованной Фондом «Даму» и ЕБРР.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <a href="#contact" className="btn-gold">
               Получить консультацию <IconArrow />
             </a>
+            <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-gold-400/10 border border-gold-400/40 text-gold-700 font-bold text-sm">
+              <span className="w-6 h-6 rounded-md bg-gold-grad text-navy-900 grid place-items-center text-[11px] font-display font-bold">₸</span>
+              20 000 ₸
+            </span>
             <a href="https://wa.me/77754492929" target="_blank" rel="noopener" className="btn-ghost">
               <IconWA width="18" height="18" /> Написать в WhatsApp
             </a>
