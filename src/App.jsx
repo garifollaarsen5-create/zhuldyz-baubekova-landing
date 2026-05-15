@@ -1,6 +1,7 @@
 import Header from './sections/Header.jsx'
 import Hero from './sections/Hero.jsx'
 import About from './sections/About.jsx'
+import Mission from './sections/Mission.jsx'
 import Trust from './sections/Trust.jsx'
 import Services from './sections/Services.jsx'
 import Tariffs from './sections/Tariffs.jsx'
@@ -20,6 +21,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Mission />
         <Trust />
         <Services />
         <Tariffs />
